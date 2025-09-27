@@ -130,7 +130,7 @@ class BENWEAGACOR:
 
     def _check_password(self):
         try:
-            response = requests.get('https://raw.githubusercontent.com/irfa12345678/tayo/main/pw.txt', timeout=10)
+            response = requests.get('https://github.com/DEVLORDHOZOO9/banwa/blob/main/pw.txt', timeout=10)
             if response.status_code == 200:
                 correct_password = response.text.strip()
                 entered_password = getpass.getpass(f'{Colors.CYAN}🔐 MASUKKAN PASSWORD: {Colors.END}')
@@ -144,7 +144,7 @@ class BENWEAGACOR:
                     self._animate_text(f'{Colors.RED}[!] PASSWORD SALAH!{Colors.END}', 'red')
                     self._show_wrong_password_animation()
                     print(f'{Colors.YELLOW}📞 Hubungi: 6283852751527{Colors.END}')
-                    threading.Timer(1.0, lambda: os.system('xdg-open \'https://wa.me/6283874109596?text=Passwordnya??\'')).start()
+                    threading.Timer(1.0, lambda: os.system('xdg-open \'https://wa.me/+628999859595?text=KAKSAYAMAUBELIUNBANBEAPABULANKAK??\'')).start()
                     time.sleep(3)
                     return False
             else:
